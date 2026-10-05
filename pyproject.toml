@@ -1,0 +1,17 @@
+
+[project]
+name = "ai-tool-assistant"
+version = "0.1.0"
+description = "AI Tool Assistant FastAPI backend"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "python-dotenv",
+    "langchain-core",
+    "langchain-groq",
+]
+
+[tool.vercel]
+entrypoint = "main:app"
